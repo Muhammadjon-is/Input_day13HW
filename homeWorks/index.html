@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>Welcome to your personal Task List!</h1>
+      <br />
+
+      <span
+        >You can add any task you like by writing it in the specified field and
+        then press "Add new task"</span
+      ><br /><br />
+
+      <ul id="myTaskList"></ul>
+
+      <input type="text"  id="putTask" autocomplete="off" />
+
+      <button onclick="addNewTask()">Add new task</button>
+
+      <button class="delete" onclick="removeList()">Remove first</button>
+
+      <br />
+      <!-- <hr> -->
+
+      <!-- <hr /> -->
+
+      <input type="color" placeholder="Color" id="colorPicker" />
+
+      <input
+        type="button"
+        value="Change task background"
+        onclick="changeTaskBackgroundColor()"
+      />
+
+      <hr />
+
+      <input type="button" value="Sort" onclick="bubbleSort()" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
